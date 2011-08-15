@@ -1,0 +1,196 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* CountriesAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {921, 428}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 464}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Countries */ = {
+		activeExec = 0;
+		executables = (
+			EB7F9FCE1268EC7F00CE0E28 /* Countries */,
+		);
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {542, 409}}";
+			sepNavSelRange = "{249, 0}";
+			sepNavVisRange = "{0, 258}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1128, 2340}}";
+			sepNavSelRange = "{2143, 0}";
+			sepNavVisRange = "{2091, 358}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = EB7F9FCE1268EC7F00CE0E28 /* Countries */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Countries */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Countries */,
+		);
+		codeSenseManager = EB7F9FE61268EC8600CE0E28 /* Code sense */;
+		executables = (
+			EB7F9FCE1268EC7F00CE0E28 /* Countries */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					10,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 308866176;
+			PBXWorkspaceStateSaveDate = 308866176;
+		};
+		perUserProjectItems = {
+			EB7F9FEB1268EDFC00CE0E28 /* PBXTextBookmark */ = EB7F9FEB1268EDFC00CE0E28 /* PBXTextBookmark */;
+			EB7FA00D1268F16800CE0E28 /* PBXTextBookmark */ = EB7FA00D1268F16800CE0E28 /* PBXTextBookmark */;
+			EB7FA05D1268F51800CE0E28 /* PBXTextBookmark */ = EB7FA05D1268F51800CE0E28 /* PBXTextBookmark */;
+			EB7FA06E1268F5EC00CE0E28 /* PBXTextBookmark */ = EB7FA06E1268F5EC00CE0E28 /* PBXTextBookmark */;
+			EB7FA0871268F65C00CE0E28 /* PBXTextBookmark */ = EB7FA0871268F65C00CE0E28 /* PBXTextBookmark */;
+			EB7FA08A126913B800CE0E28 /* PBXTextBookmark */ = EB7FA08A126913B800CE0E28 /* PBXTextBookmark */;
+		};
+		sourceControlManager = EB7F9FE51268EC8600CE0E28 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	EB7F9FCE1268EC7F00CE0E28 /* Countries */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Countries;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	EB7F9FE51268EC8600CE0E28 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	EB7F9FE61268EC8600CE0E28 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	EB7F9FEB1268EDFC00CE0E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 12";
+		rLen = 0;
+		rLoc = 249;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	EB7F9FFB1268EF0200CE0E28 /* DetailViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {921, 428}}";
+			sepNavSelRange = "{347, 0}";
+			sepNavVisRange = "{0, 411}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
+	EB7F9FFC1268EF0200CE0E28 /* DetailViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 858}}";
+			sepNavSelRange = "{775, 0}";
+			sepNavVisRange = "{552, 240}";
+		};
+	};
+	EB7FA00D1268F16800CE0E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* CountriesAppDelegate.h */;
+		name = "CountriesAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 464;
+		vrLoc = 0;
+	};
+	EB7FA05D1268F51800CE0E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 101";
+		rLen = 0;
+		rLoc = 2606;
+		rType = 0;
+		vrLen = 992;
+		vrLoc = 1767;
+	};
+	EB7FA06E1268F5EC00CE0E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EB7F9FFB1268EF0200CE0E28 /* DetailViewController.h */;
+		name = "DetailViewController.h: 19";
+		rLen = 0;
+		rLoc = 347;
+		rType = 0;
+		vrLen = 411;
+		vrLoc = 0;
+	};
+	EB7FA0871268F65C00CE0E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EB7F9FFC1268EF0200CE0E28 /* DetailViewController.m */;
+		name = "DetailViewController.m: 29";
+		rLen = 0;
+		rLoc = 775;
+		rType = 0;
+		vrLen = 184;
+		vrLoc = 654;
+	};
+	EB7FA08A126913B800CE0E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EB7F9FFC1268EF0200CE0E28 /* DetailViewController.m */;
+		name = "DetailViewController.m: 27";
+		rLen = 0;
+		rLoc = 660;
+		rType = 0;
+		vrLen = 838;
+		vrLoc = 0;
+	};
+}
