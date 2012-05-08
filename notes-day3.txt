@@ -1,0 +1,71 @@
+Questions
+- do you alloc on types like int?
+- what happens when an object gets deallocated that another object received a pointer to a property on that object?
+- do you ever not create a pointer variable?
+- pointer variables far more common?
+- difference when creating a delegate and controller?
+
+- (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {}
+
+is this how you call the above message?
+
+[self actionSheet:someVar clickedButtonAtIndex:i]
+
+
+
+Started at slide 282
+
+
+SQLite
+
+No objects, loosely typed, straight C
+Compliled SQL statements are faster!
+Use const char * strings, NOT NSString's!
+Need to convert char arrays to NSString and ints to NSNumber
+So use NSString stringWithCString (deprecated) and NSNumber numberWithInt
+NSString stringWithUTF8String is a better approach
+Bind to "?" placeholders in SQL
+Use indexes
+Can leave database file in default location if its read-only
+Writable location (~/Library) is good
+
+
+SQLite Data Type Conversions
+
+int age = sqlite3_column_int(sqlStmt, 0);
+double age = sqlite3_column_double(sqlStmt, 1);
+NSString *zip = [NSString stringWithUTF8String:(char *)sqlite3_column_text(sqlStmt, 2)];
+const char *bytes = sqlite3_column_blob(sqlStmt, 3);
+int length = sqlite3_column_bytes(sqlStmt, 3);
+UIImage img = [UIImage imageWithData:[NSData dataWithBytes:bytes length:length]];
+
+
+More Memory Management
+
+Don't release simple data types like when doing BOOL *result
+When using "alloc" and "init" you have to release
+Working with convenience methods autoreleased since YOU DO NOT "alloc" or "init"
+
+
+UITableView
+
+Tables are a single column wide
+Tables can have multiple sections
+Indexes start at ZERO
+Each row is an instance of the UITableViewCell class
+2 main table types: grouped and plain with sections & indexed (contacts)
+Data population conform to protocols: UITableViewDelegate and UITableViewDataSource
+File's Owner will be responsible for implementing these protocols
+
+
+Navigation Controllers
+
+Container class like tab bars
+Often seen working with tables
+Hierarchical
+Behave like a stack, first in, last out
+
+
+
+
+

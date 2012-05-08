@@ -1,0 +1,141 @@
+4 Layers of the Stack
+
+- Core OS
+- Services
+- Media
+-Cocoa Touch
+
+
+.h files - interface (headers)
+.m files - implementation
+.xib - representation of the app interface, pronounced nib (Interface Builder)
+.plist - a property list that contains information about app
+
+
+Documentation
+
+- Press and hold the "Option" key and double click on the UIAlertView
+- Help -> Documentation
+- www.stackoverfow.com
+- www.iphonedevsdk.com/forum
+- Apple Developer Fwworums (good for talking about what is under NDA)
+
+
+Logging and Debugging
+
+- printf("number - %i", index) // letter after % is format identifier!
+- NSLog("number - %@", index)
+
+Step Over: to the next statement in your project, skips method calls
+Step Into: step into a method call
+Step Out: step out of a method call or loop
+
+Zombies
+- enables logging for when sending messages to a deallocated object instead of crashing
+- double click an executable in the "Executables" group in Files pane
+- "Arguments" tab, bottom list "Variables to be set in the enviornment"
+- add variable Name = "NSZombieEnabled", Value = "Yes"
+
+
+C and C Pointers
+
+typedef struct rect {
+	int x;
+	int y;
+	int width;
+	int height;
+} RECTANGLE;
+
+- a pointer is a memory address
+- example: "type *variableName"
+
+int *foo_ptr // declare a pinter of type integer
+int foo1 = 1; // declare an integer with a value of 1
+foo_ptr =& foo1; // assign the 'address-of' foo1 into foo_ptr
+
+- use "=&" tp assign address to pointer variable, not value
+
+*foo_ptr = (*foo_ptr) + 1; // is the same as next line
+(*foo_ptr)
+
+- "*" operator is to dereference and get value
+
+Foundation abstracts a lot of the pointer stuff
+
+
+Objective-C Programming Basics
+
+- sending a message to an object
+- [object message];
+
+- sending a message with an argument to an object
+- [object message:@"argument"];
+
+[alert show:@"Hello World!"];
+
+[alert show:@"Hello World!" 
+      times:2 
+    turnOff:Yes];
+
+- message is the combination of arguments
+- calling methods within class or parent use "self", example: [self message];
+- Type, Object, Class, Method, Arguments/Selector Values
+
+
+Interface vs Implementation
+
+Interface is the contract/blueprint
+
+@interface NewClassName : ClassWeInheritFrom
+{
+	DataType *instanceVariable;
+}
+
+Implementation is the guts/action code
+
+- (returnDataType methodName:(dataType *) arg1;
+@end
+
+
+Instance vs Class Methods
+
+- (void) dealloc {} // Instance method
++ (id) getClass {} // Class method (static method)
+		// id is a generic pointer, I don't know what type getClass will return
+
+@class MyClass 
+- doesn't import the full class, just the name
+- compiler won't complain about an unknown class
+- importing would import the full class
+
+
+Thread Safe
+
+- single threaded nonatomic is fine
+- to really do thread safe object can't use atomic/nonatomic
+
+
+Synthesize
+
+- don't use @synthesize for custom getter/setter's
+- another mechanism for executing code when a property is set and/or get
+- when you don't @synthesize, no reference counting is done!!
+
+
+Memory Management
+
+- need to retain a property for reference counting to happen
+- Foundation and UIKit containers will retain objects
+- objects like NSArray, NSDictionary, UINavigationController, UIView
+- autorelease relieves you of the release responsibility
+- tight memory constraints, autorelease pool isn't released that often
+
+return [[MyObject alloc] init];
+vs.
+return [[[MyObject alloc] init] autorelease];
+
+- first return statement gives responsibility to release the object to returnee
+- always use second return statement when returning instances
+
+
+

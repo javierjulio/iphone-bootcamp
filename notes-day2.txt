@@ -1,0 +1,74 @@
+Started at slide 178
+
+Sending a message to an Object
+What I know as Arguments, in Objective-C are known as Selectors
+Arguments are something else, they make up the message
+
+Init
+
+- happens once immediately on creation
+- however nib has not been loaded yet
+
+
+ViewDidLoad()
+
+- can be called multiple times!
+- happens when view is presented
+
+
+First Responder
+
+- Is a proxy for the object that the user is currently interacting with.
+- This can and often will change at runtime.
+
+
+Delegation and Protocols
+
+- delegation allows an object to enlist other objects to do its work
+- by implementing methods defined in a protocol
+- protocol method implementations are mostly optional!
+- protocols solve the issue where you can't inherit from multiple delegates
+- ex: have a view that needs to have a protocol for UITableView and UIAlert
+- Option + Double Click to open the .h files
+
+
+IBOutlet and IBAction
+
+Outlet: pointers that reference an boject in the nib (IBOutlet)
+Action: methods that can be triggered by object in the nib (IBAction)
+
+
+Copying Projects
+
+Find project folder in Finder, copy it and rename folder
+Open in XCode and go to Project -> Rename
+Careful with .plist file if deploying iPhone app!
+
+
+Selectors
+
+In Objective-C selectors have 2 meanings
+It's the name of a method and unique identifier that replaces the method name
+Basically a pointer to a method
+Runtime system insures each identifier is unique
+Compiled selectors are assigned to a special type called SEL
+
+
+Views
+
+For multiple views we introduce the need for a Root View Controller
+Typically lives in the MainWindow.xib
+UITabController and UINavigationController, can be used together
+For example, a tab content view could be a UINavigationController and vice versa
+
+
+Sound 
+
+AudioToolbox.h
+Types we care about: SystemSoundId
+Have to include: #import <AudioToolbox/AudioToolbox.h>
+SystemSoundId typed variable has to be just straight variable, not a pointer
+
+
+
+
